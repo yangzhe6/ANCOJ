@@ -1,2 +1,9 @@
-# ANCOJ
-A new catalogue of observations of Jupiter
+# A new catalogue of observations of Jupiter
+*站在前人的肩膀上应该能看的更远*
+## 工作进度
+11月  完成nsdc的数据处理
+12月 搜集新数据整理、准备考试
+1月 完成所有的数据转换
+2月 完善所有的数据分析、矫正并撰写初稿
+3月 正式撰写文章
+4月 完善文章错误准备投递
