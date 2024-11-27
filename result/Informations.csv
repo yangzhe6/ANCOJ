@@ -1,4 +1,4 @@
-id,类型,日期,天文台,参考框架,框架中心,分点历元,时间尺度,归算,坐标,衍射,接收器,望远镜,观测者,相对
+id,Type,Dates,Observatory,Reference Frame,Centre of Frame,Epoch of Equinox,Time Scale,Reduction,Coordinates,Diffraction,Receptor,Telescope,Observers,Relative To
 jg0001,relative,1891-1978,no informations,astrometric,topocentre,B1950,UTC,no information,tangential,no information,photographic,no information,no information,
 jg0002,relative,1998-1998,084 - Pulkovo,astrometric,topocentre,date,UTC,no information,"X, Y",removed,"CCD, ST-6, field 3' x 2'","Refractor, F = 10.4 m, D = 62 cm","Kisseleva T.P., Izmailov I.S.","J1-Io:      2,"
 jg0003,absolute,1998-1998,808 - El Leoncito,apparent,geocentre,date,TT,referred to the 1976 IAU reference system,absolute,removed,meridian,"San Fernando Automatic Meridian Circle, D = 18 cm","Belizon F., Mallamacci C., Marmolejo L.,",absolute

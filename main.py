@@ -9,9 +9,9 @@ folder_path = './data/J'  # 原始数据目录
 result_path = './result'  # 结果生成目录
 csv_path = './result/csv'  # CSV文件目录
 
-# # 提取天文数据
-# print('\n提取天文数据...')
-# extract_astronomy_data(folder_path)
+# 提取天文数据
+print('\n提取天文数据...')
+extract_astronomy_data(folder_path)
 
 # # 将TXT文件夹中的文件转换为CSV
 # print('将TXT文件夹中的文件转换为CSV...')
