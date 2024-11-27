@@ -1,8 +1,8 @@
 # 导入模块
-from python.txt_to_csv import convert_txt_to_csv
-from python.csv_column import extract_csv_column_info
-from python.csv_value import extract_unique_values
-from python.html_info import extract_astronomy_data
+from sub.txt_to_csv import convert_txt_to_csv
+from sub.csv_column import extract_csv_column_info
+from sub.csv_value import extract_unique_values
+from sub.html_info import extract_astronomy_data
 
 # 设置文件路径
 folder_path = './data/J'  # 原始数据目录
