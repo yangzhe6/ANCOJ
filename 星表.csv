@@ -1,0 +1,34 @@
+﻿id
+n-ser
+n-plate
+year
+mon
+day
+hour
+min
+sec
+j1-x
+j2-x
+j3-x
+j4-x
+j1-y
+j2-y
+j3-y
+j4-y
+n-sat
+factor
+Origin of the coordinates
+year
+mon
+Day    of the moment of observation with decimals
+n-sat
+n-ref
+X
+Y
+O-C(X)e
+O-C(Y)e
+n-sat
+jd
+alpha.hours
+delta.Degrees
+mag
