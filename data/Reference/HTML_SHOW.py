@@ -3,7 +3,8 @@ import os
 import chardet
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QTextEdit, QLabel, QLineEdit, QHBoxLayout
 from PyQt5.QtGui import QFont, QColor
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QRect
+from PyQt5.Qt import QDesktopWidget
 
 class FileViewer(QWidget):
     def __init__(self, files):
@@ -15,13 +16,20 @@ class FileViewer(QWidget):
 
     def initUI(self):
         self.setWindowTitle('File Viewer')
-        self.setGeometry(10, 50, 550, 800)
+        
+        # 获取主屏幕的分辨率
+        available_geometry = QDesktopWidget().availableGeometry(self)
+        screen_width = available_geometry.width()
+        screen_height = available_geometry.height()
+
+        # 设置窗口大小为屏幕的百分比
+        self.setGeometry(10, 50, int(screen_width * 0.35), int(screen_height * 0.8))
 
         layout = QVBoxLayout()
 
         # 文件名显示
         self.file_label = QLabel(self)
-        self.file_label.setStyleSheet("font-weight: bold; color: darkred; font-size: 20px;")
+        self.file_label.setStyleSheet("font-weight: bold; color: darkred; font-size: 40px;")
         layout.addWidget(self.file_label)
 
         # 文本编辑区域
@@ -68,7 +76,7 @@ class FileViewer(QWidget):
     def loadFile(self, index):
         if 0 <= index < len(self.files):
             filename = self.files[index]
-            filepath = os.path.join('D:\\1', filename)
+            filepath = os.path.join('./data/J', filename)
             try:
                 with open(filepath, 'rb') as file:
                     raw_data = file.read()
@@ -107,6 +115,6 @@ class FileViewer(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    files = [f for f in os.listdir('D:\\1') if f.endswith('.html')]
+    files = [f for f in os.listdir('./data/J') if f.endswith('.html')]
     viewer = FileViewer(files)
     sys.exit(app.exec_())

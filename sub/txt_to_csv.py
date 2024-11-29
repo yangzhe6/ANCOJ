@@ -64,8 +64,3 @@ def convert_txt_to_csv(folder_path, csv_path):
         print("转换失败的文件:", failed_files)
     else:
         print("所有文件转换成功。")
-'''
-原始数据有很多错误
-jg0004
-jg0008
-'''
