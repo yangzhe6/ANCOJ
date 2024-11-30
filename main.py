@@ -1,30 +1,26 @@
-# 导入模块
-from sub.txt_to_csv import convert_txt_to_csv
-from sub.csv_column import extract_csv_column_info
-from sub.csv_value import extract_unique_values
-from sub.html_info import extract_astronomy_data
+from Sub.a_html_info import a_html_info
+from Sub.b_convert_csv import b_convert_csv
+from Sub.c_info_value import c_info_value
+from Sub.d_csv_utils import d_csv_utils
 
-# 设置文件路径
-folder_path = './data/J'  # 原始数据目录
-result_path = './result'  # 结果生成目录
-csv_path = './result/csv'  # CSV文件目录
+def main(a,b,c,d):
+    if a == 1:
+        print('\n提取天文数据...\n')
+        a_html_info(folder_path)
+    if b == 1:
+        print('\n将TXT文件夹中的文件转换为CSV...\n')
+        b_convert_csv(folder_path, csv_path)
+    if c == 1:
+        print('\n打印CSV文件中指定列的所有唯一值...\n')
+        c_info_value(result_path + '/Informations.csv', 'Epoch of Equinox')
+        c_info_value(result_path + '/Informations.csv', 'Time Scale')
+    if d == 1:
+        print('\n提取CSV文件的列名信息...\n')
+        d_csv_utils(result_path+'/final')
 
-# # 提取天文数据
-# print('\n提取天文数据...')
-# extract_astronomy_data(folder_path)
-
-# 将TXT文件夹中的文件转换为CSV
-print('将TXT文件夹中的文件转换为CSV...')
-convert_txt_to_csv(folder_path, csv_path)
-
-
-# # 提取CSV文件的列信息
-# print('提取CSV文件的列信息...')
-# extract_csv_column_info(csv_path)
-
-
-# # 打印CSV文件中指定列的所有唯一值（示例代码，可根据需要取消注释）
-# print('打印CSV文件中指定列的所有唯一值...')
-# extract_unique_values(result_path + '/Informations.csv', 'Epoch of Equinox')
-# extract_unique_values(result_path + '/Informations.csv', 'Time Scale')
-
+if __name__ == '__main__':
+    # 设置文件路径
+    folder_path = './Data/J'  # 原始目录
+    result_path = './Result'  # 结果目录
+    csv_path = './Result/csv'  # CSV文件目录
+    main(0,0,0,1)
