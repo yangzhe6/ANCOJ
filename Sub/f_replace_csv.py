@@ -47,7 +47,7 @@ class CsvHeaderEditor(QMainWindow):
             """
         )
         self.header_table.horizontalHeader().setStretchLastSection(True)
-        self.header_table.verticalHeader().setVisible(False)
+        self.header_table.verticalHeader().setVisible(True)
         self.header_table.setEditTriggers(QTableWidget.AllEditTriggers)
         self.header_table.cellChanged.connect(self.on_cell_changed)
         self.main_layout.addWidget(self.header_table)
@@ -71,6 +71,7 @@ class CsvHeaderEditor(QMainWindow):
         
         self.replace_btn = QPushButton("替换表头")
         self.replace_btn.clicked.connect(self.replace_header)
+        
         button_layout.addWidget(self.replace_btn)
         self.main_layout.addLayout(button_layout)
         central_widget = QWidget()
@@ -172,7 +173,7 @@ class CsvHeaderEditor(QMainWindow):
         msg_box.setStandardButtons(QMessageBox.Ok)
         msg_box.setDefaultButton(QMessageBox.Ok)
         msg_box.show()
-        QTimer.singleShot(1000, msg_box.close)
+        QTimer.singleShot(300, msg_box.close)
 
     def show_warning(self, title, message):
         msg_box = QMessageBox(self)
@@ -181,7 +182,7 @@ class CsvHeaderEditor(QMainWindow):
         msg_box.setStandardButtons(QMessageBox.Ok)
         msg_box.setDefaultButton(QMessageBox.Ok)
         msg_box.show()
-        QTimer.singleShot(1000, msg_box.close)
+        QTimer.singleShot(300, msg_box.close)
 
     def show_critical(self, title, message):
         msg_box = QMessageBox(self)
@@ -190,7 +191,7 @@ class CsvHeaderEditor(QMainWindow):
         msg_box.setStandardButtons(QMessageBox.Ok)
         msg_box.setDefaultButton(QMessageBox.Ok)
         msg_box.show()
-        QTimer.singleShot(1000, msg_box.close)
+        QTimer.singleShot(300, msg_box.close)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
