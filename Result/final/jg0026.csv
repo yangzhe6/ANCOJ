@@ -1,4 +1,4 @@
-year,mon,day,na+np,n-obs,hour,min,sec,Position angle,s,r
+year,mon,day,na+np,n-obs,hour,min,sec,Position angle,sigma,Flag R
 [1997],[4],[13],[1o2],[ODE],[0],[29],[46.97],[160.066658],[0.0128],[0]
 [1997],[4],[24],[4o2],[BOR],[3],[56],[1.20],[340.929520],[0.0080],[0]
 [1997],[4],[24],[4o2],[MAD],[3],[56],[13.33],[340.012804],[0.0172],[0]
