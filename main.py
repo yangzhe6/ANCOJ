@@ -28,5 +28,5 @@ if __name__ == '__main__':
     folder_path = './Data/J'
     result_path = './Result'
     csv_path = './Result/csv'
-    main(a=False, b=False, c=False, d=True, e=False)
+    main(a=False, b=False, c=False, d=True, e=True)
 

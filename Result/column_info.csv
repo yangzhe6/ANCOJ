@@ -1,35 +1,35 @@
 Column Name,Count
-year,31
-mon,30
-day,29
-n-sat,25
-hour,21
-min,21
-sec,20
-y-d,14
-y-',14
-y-'',14
-x,14
-n-obs,14
-y,13
-x-h,12
-x-m,12
-x-s,12
+year,41
+mon,40
+day,39
+n-sat,31
+hour,28
+min,27
+sec,27
+n-obs,19
+y-d,18
+y-',18
+y-'',18
+x,18
+y,17
+x-h,16
+x-m,16
+x-s,16
+na+np,11
+Position angle,10
+O-C(X),9
+O-C(Y),9
 n-ref,8
-na+np,8
-Position angle,8
-O-C(X),7
-O-C(Y),7
-jd,6
-s-x,4
-s-y,4
-s,4
-Flag Q,4
-S min,4
-sigma,4
-Flag R,4
-ra,3
-dec,3
+jd,8
+s,6
+sigma,6
+dec,5
+s-x,5
+s-y,5
+Flag Q,5
+S min,5
+Flag R,5
+ra,4
 type,3
 n-ser,2
 O-C(Y)e,2
@@ -47,6 +47,15 @@ bx,2
 by,2
 bz,2
 parallax,2
+O-C,2
+cat,2
+sat1,2
+sat2,2
+s-sec,2
+s-mas,2
+delta-sec,2
+delta-mas,2
+n,2
 id,1
 n-plate,1
 j1-x,1
@@ -111,6 +120,12 @@ n-pla,1
 epoch,1
 n-tel,1
 say,1
-O-C,1
-parallax in delta,1
-cat,1
+mon.1,1
+tele/cat,1
+s-ocx,1
+s-ocy,1
+cml,1
+Impact parameter in arcseconds,1
+Impact parameter in kilometers,1
+s-arc,1
+s-kil,1
