@@ -1,27 +1,38 @@
 Column Name,Count
-n-sat,18
-year,17
-mon,16
-day,16
-hour,12
-min,12
-sec,11
-y-d,11
-y-',11
-y-'',11
-x-h,9
-x-m,9
-x-s,9
-x,6
-n-obs,6
-n-ref,5
-y,5
-jd,3
+year,31
+mon,30
+day,29
+n-sat,25
+hour,21
+min,21
+sec,20
+y-d,14
+y-',14
+y-'',14
+x,14
+n-obs,14
+y,13
+x-h,12
+x-m,12
+x-s,12
+n-ref,8
+na+np,8
+Position angle,8
+O-C(X),7
+O-C(Y),7
+jd,6
+s-x,4
+s-y,4
+s,4
+Flag Q,4
+S min,4
+sigma,4
+Flag R,4
 ra,3
 dec,3
+type,3
 n-ser,2
 O-C(Y)e,2
-type,2
 na,2
 np,2
 mjd,2
@@ -94,3 +105,12 @@ weight,1
 note(latitude correction is not accurate=1),1
 wavelength,1
 n-tele,1
+err,1
+v-mag,1
+n-pla,1
+epoch,1
+n-tel,1
+say,1
+O-C,1
+parallax in delta,1
+cat,1
