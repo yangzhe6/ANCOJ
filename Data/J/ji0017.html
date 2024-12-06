@@ -1,0 +1,113 @@
+<HTML>
+
+<HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+  <title>ji0017</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <style>
+    .MathJax { font-size: 1.1em !important; }
+  </style>
+</HEAD>
+
+<PRE>
+Contents.
+      planet: 5 - Jupiter
+  satellites: J5 - Amalthea: 239,
+              J14- Thebe   :  50
+total number: 289
+        type: absolute
+       dates: 2000-2001
+ observatory: Cassini space probe
+
+Reference
+   Cooper, N. J.; Murray, C. D.; Porco, C. C.; Spitale, J. N. (2006)
+   Cassini ISS astrometric observations of the inner jovian satellites, Amalthea and Thebe
+   Icarus. Vol. 81. P. 223-234.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=2006Icar__181__223C">2006Icar__181__223C</A>
+
+Informations.
+         relative to: absolute
+     reference frame: astrometric
+     centre of frame: Cassini space probe
+    epoch of equinox: ICRF
+          time scale: UTC
+           reduction: Hubble Space Telescope Guide Star Catalog (version GSC 2.2)
+         coordinates: sample and line of the satellite (the origin of the coordinate system is the center of the top left pixel of the frame, with
+                      line increasing downwards and sample to the right)
+    diff. refraction: no information
+            receptor: CCD
+           telescope: Cassini ISS narrow angle camera (NAC)
+           observers: Cassini space probe
+ data included in standard data file: no
+
+Comments.
+  1. The sample and line coordinates give the 'centre-of-light' coordinates of the satellites. To obtain the 'centre-of-mass' positions,
+     it is necesary to make phase corrections described in the section 2.3 of the article (see Reference above). However, note that for
+     observations made in 2000 phase angles were small so that phase corrections are negligible.
+  2. To fit satellite orbits to observations, Cooper et al. (see Reference above) give formulae for calculation of modelled values of
+     sample and line coordinates (see Appendix A in the article).
+  3. For estimations of absolute coordinates of the satellites, the following set of formulae should be used (based on algorithm described in
+     <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=2013A&A___551A_129T">Tajeddine et al. (2013)</A>, see formulae (4)–(6)):
+     a. First, it is necessary to calculate the rectangular coordinates of the satellite in the image:
+     </pre>
+       \begin{equation*}
+          \begin{pmatrix}
+             X\\
+             Y
+          \end{pmatrix} = \sigma 
+          \begin{pmatrix}
+             \rho & 0 \\
+             0 & \rho
+          \end{pmatrix}
+          \begin{pmatrix}
+             \cos \theta & -\sin \theta \\
+             \sin \theta & \cos \theta 
+          \end{pmatrix}
+          \begin{pmatrix}
+             s-s_0\\
+             l-l_0
+          \end{pmatrix}
+       \end{equation*}
+     <pre>
+        where: σ is 1.0, 2.0, or 4.0 for images with the frame size of 1024, 512, or 256 pixels, respectively;
+               ρ = 1.2354 arcsec per pixel;
+               θ is the camera's twist angle;
+               (s<sub>0</sub>, l<sub>0</sub>) are the coordinates of the frame's centre, i.e. (511.5, 511.5), (255.5, 255.5), or (127.5, 127.5) for images with the frame
+                 size of 1024, 512, or 256 pixels, respectively;
+               (s, l) are the satellite's sample and line coordinates. Note that the origin of the image sample and line coordinate system is at the
+                 center of the top left pixel, with line increasing downwards and sample to the right. This is why the formula above slightly differs
+                 from the formula (4) in Tajeddine et al. (2013) where the origin is at the center of the bottom left pixel.
+     b. Then, the satellite's absolute coordinates can be obtained from the formulae:
+     </pre>
+       \begin{equation*}
+          \alpha=\alpha_c+\arctan\left(\frac{X}{\cos \delta_c - Y \sin \delta_c}\right)
+       \end{equation*}
+       \begin{equation*}
+          \delta=\arctan\left(\frac{\sin \delta_c + Y \cos \delta_c}{\sqrt{X^2+(\cos \delta_c - Y \sin \delta_c)^2}}\right)
+       \end{equation*}
+     <pre>
+        where α<sub>c</sub> and δ<sub>c</sub> are absolute coordinates of the camera's pointing vector orientation.
+         
+Format.
+   1. Image identification number (Frame)
+   2. Year of the date of the observation
+   3. Month of the date of the observation
+   4. Day of the date of the observation
+   5. Hour of the observation time (image mid-time)
+   6. Minute of the observation time (image mid-time)
+   7. Seconds of the observation time (image mid-time)
+   8. Size of the frame (pixels)
+   9. Right ascension of the camera's pointing vector orientation (RAc, degrees)
+  10. Declination of the camera's pointing vector orientation (DEc, degrees)
+  11. The camera's twist angle (twist, degrees)
+  12. Sample coordinate of the satellite in the image (sample, pixels)
+  13. Line coordinate of the satellite in the image (line, pixels)
+  14. Index of the satellite, N (05 - Amalthea, 14 - Thebe)
+
+-------------------------------------------------------------------------------------------------------------------------
+Frame           Year    Day Time              Size    RAc             DEc              twist           sample  line    N
+                  Month    h  m  s           pixels   degrees         degrees          degrees         pixels  pixels
+-------------------------------------------------------------------------------------------------------------------------
+
+</PRE></BODY></HTML>

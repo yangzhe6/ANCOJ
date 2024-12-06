@@ -1,0 +1,17 @@
+﻿jg0004.csv,多余的空格,是
+jg0008.csv,多余的空格,是
+jg0033.csv,特殊标注了一行观测台站变更,是
+jg0050.csv,多余的空格,是
+jo0035.csv,"13. 震级，Mag（若未指定则留空）
+14. 震级带，Band（若未指定则留空）",是
+jo0050.csv,"13. 震级，Mag（若未指定则留空）
+14. 震级带，Band（若未指定则留空）",是
+jo1042.csv," 12. Magnitude in R band (blank if not available)",是
+jg0014.csv,"最后一列是 note(N) Note (if equal to 1) that latitude correction is not accurate
+",否
+jg0029.csv,最后一列是天文台的名称,否
+jo0046.csv,"13. 震级，Mag（若未指定则留空）
+14. 震级带，Band（若未指定则留空）",否
+jo0047.csv,"13. 震级，Mag（若未指定则留空）
+14. 震级带，Band（若未指定则留空）",否
+jo1045.csv," 12. Magnitude in R band (blank if not available)",否

@@ -1,0 +1,79 @@
+<HTML><HEAD><TITLE>jg0001</TITLE></HEAD><PRE>
+Contents.
+      planet: 5 -Jupiter
+  satellites: J1-Io      : 1370,
+              J2-Europe  : 1467,
+              J3-Ganymede: 1175,
+              J4-Callisto: 1269
+total number: 5281
+        type: relative
+       dates: 1891-1978
+ observatory: no informations
+
+Reference.
+   Arlot Jean-Eudes (1982)
+   Amelioration des ephemerides des satellites galileens
+   de Jupiter par l'analyse des observations.
+   These de Doctorat d'etat, Obs. de Paris.
+   <A HREF="../../../../cgi-bin/ObsArticleByCode.cgi?code=20001982PhDT_______">20001982PhDT_______</a>
+
+Informations.
+     reference frame: astrometric
+     centre of frame: topocentre
+    epoch of equinox: B1950
+          time scale: UTC
+           reduction: no information
+         coordinates: tangential
+    diff. refraction: no information
+            receptor: photographic
+           telescope: no information
+           observers: no information
+ data included in standard data file: no
+
+Comments.
+     Each line from 1606 given lines contents the coordinates
+     from one plate for 1 to 4 satellites.
+
+Format.
+
+  1. The chronological number (N)
+  2. The number of the series (N ser)
+  3. The number of the photographic plate (N plate, 9999 if unknown)
+  4. X coordinate of J1-Io       in micrometer (zero if not observed).
+  5. X coordinate of J2-Europe   in micrometer (zero if not observed).
+  6. X coordinate of J3-Ganymede in micrometer (zero if not observed).
+  7. X coordinate of J4-Callisto in micrometer (zero if not observed).
+  8. Y coordinate of J1-Io       in micrometer (zero if not observed).
+  9. Y coordinate of J2-Europe   in micrometer (zero if not observed).
+ 10. Y coordinate of J3-Ganymede in micrometer (zero if not observed).
+ 11. Y coordinate of J4-Callisto in micrometer (zero if not observed).
+ 12. The number of the satellites on the exposure (N sats).
+ 13. The factor of the plate scale in arseconds per millimeter (Factor).
+ 14. Origin of the coordinates (Origin) ,
+        0: observed Jupiter,
+        i: satellite number i,
+        5: the gravity center of the observed satellites.
+        6: arbitrary theoretical Jupiter
+
+                                                             Columns 1-80
+---------------------------------------------------------------------------->
+   N     N   Year            UTC                   X                 X
+      N plate   month   hour
+     ser            day    min seconds          J1-Io             J2-Europe
+---------------------------------------------------------------------------->
+
+                                                             Columns 81-151
+---------------------------------------------------------------------------->
+          X                 X               Y                   Y
+
+     J3-Ganymede      J4-Callisto         J1-Io             J2-Europe
+---------------------------------------------------------------------------->
+
+                                       Columns 152-202
+------------------------------------------------------
+          Y                 Y      N
+                                 sats   Factor  Origin
+     J3-Ganymede      J4-Callisto
+------------------------------------------------------
+
+</PRE></BODY></HTML>

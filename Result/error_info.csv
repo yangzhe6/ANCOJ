@@ -1,0 +1,10 @@
+﻿文件名,错误信息
+jg0014.csv,列 'weight' 空值比例过高 (61.2%)
+jg0014.csv,列 'note(latitude correction is not accurate=1)' 空值比例过高 (92.8%)
+jg0029.csv,列 'Unnamed: 15' 空值比例过高 (69.0%)
+jg0029.csv,列 'Unnamed: 16' 空值比例过高 (92.5%)
+jg0029.csv,列 'Unnamed: 17' 空值比例过高 (95.0%)
+jo0035.csv,列 'band' 空值比例过高 (58.5%)
+jo0046.csv,列 'mag' 空值比例过高 (79.8%)
+jo0046.csv,列 'band' 空值比例过高 (83.0%)
+jo1042.csv,列 'mag R' 空值比例过高 (91.5%)
