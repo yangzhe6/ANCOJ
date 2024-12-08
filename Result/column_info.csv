@@ -24,8 +24,8 @@ ra,22,
 na+np,22,
 Position angle,19,
 n-ref,18,
-O-C(X),17,
-O-C(Y),17,
+O-C(X),18,
+O-C(Y),18,
 X,14,
 Y,14,
 Z,13,
@@ -40,6 +40,7 @@ Flag R,9,jg0026; jg0028; jg0036; jg0039; jg0048; jg0058; jg0064; jg0066; jg0068
 e-ra,9,jg0054; jg0055; jg0056; jg0059; jg0060; jg0072; jg0074; jo0056; jo1051
 e-dec,9,jg0054; jg0055; jg0056; jg0059; jg0060; jg0072; jg0074; jo0056; jo1051
 Epoch_TCB,6,jg0069; jg0073; jo0069; jo0077; jo1057; jo1061
+n-ober,5,jg0013; jo1001; jo1002; jo1004; jo1005
 cat,5,jg0040; jg0042; jo0053; jo0057; jo0058
 n,5,jg0050; jg0051; jg0061; jg0062; ji0018
 oc-ra,5,jg0054; jg0055; jg0056; jg0059; jg0060
@@ -47,7 +48,6 @@ oc-dec,5,jg0054; jg0055; jg0056; jg0059; jg0060
 u-x,5,jo0014; jo0015; jo0016; jo0017; jo0018
 u-y,5,jo0014; jo0015; jo0016; jo0017; jo0018
 type,4,jg0008; jg0009; jg0034; jo0035
-n-ober,4,jo1001; jo1002; jo1004; jo1005
 mjd,3,jg0020; jg0021; ji0007
 parallax,3,jg0022; jg0023; jo0053
 O-C,3,jg0039; jg0048; jg0058
@@ -68,7 +68,6 @@ o-c,3,jg0064; jg0066; jg0068
 sat,3,jg0069; jg0073; jg0074
 Reference to publication,3,jo1038; jo1039; jo1040
 n-ser,2,jg0001; jg0013
-O-C(Y)e,2,jg0002; jg0010
 n-ccd,2,jg0010; ji0003
 na,2,jg0020; jg0021
 np,2,jg0020; jg0021
@@ -119,24 +118,23 @@ factor,1,jg0001
 Origin of the coordinates,1,jg0001
 Day of the moment of observation with decimals,1,jg0002
 O-C(X)e ,1,jg0002
+O-C(Y)e,1,jg0002
 alpha.hours,1,jg0003
 delta.Degrees,1,jg0003
 month,1,jg0004
 JD,1,jg0004
-scend,1,jg0006
+sce,1,jg0006
 gmt-h,1,jg0007
 gmt-m,1,jg0007
 Type of coordinate,1,jg0007
 "Apparent distance, arcsec",1,jg0007
 Refraction,1,jg0008
-number,1,jg0009
+n-line,1,jg0009
 x/y,1,jg0009
 x-p,1,jg0010
 y-p,1,jg0010
-O-C(x)e,1,jg0010
 n-f,1,jg0013
 n-c,1,jg0013
-obs-code,1,jg0013
 x-j1,1,jg0013
 x-j2,1,jg0013
 x-j3,1,jg0013

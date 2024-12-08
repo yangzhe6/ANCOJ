@@ -84,14 +84,17 @@ class CsvHeaderEditor(QMainWindow):
         self.next_file_btn.setFixedHeight(50)
         self.next_file_btn.clicked.connect(lambda: self.navigate_file(1))
         button_layout.addWidget(self.next_file_btn)
+        self.next_shortcut = QShortcut(QKeySequence("F3"), self)
+        self.next_shortcut.activated.connect(lambda: self.navigate_file(1))
+
         
         self.replace_btn = QPushButton("替换")
         self.replace_btn.setFont(button_font)
         self.replace_btn.setFixedHeight(50)
         self.replace_btn.clicked.connect(self.replace_header)
         button_layout.addWidget(self.replace_btn)
-        self.replace_shortcut = QShortcut(QKeySequence("F2"), self)  # 假设我们使用Ctrl+R作为快捷键
-        self.replace_shortcut.activated.connect(self.replace_header)  # 当快捷键被激活时，调用replace_header方法
+        self.replace_shortcut = QShortcut(QKeySequence("F2"), self)
+        self.replace_shortcut.activated.connect(self.replace_header)
         self.main_layout.addLayout(button_layout)
 
         
